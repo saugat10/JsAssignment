@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>String Duplication</h1>
+        <label>Message</label>
+        <input id="inputField" v-model="word" placeholder="Message">
+        <label>How Many</label>
+        <input id="inputField" v-model="howMany" placeholder="Message">
+        <button id="button" v-on:click="doIt(word,howMany)" class="btn btn-primary">Do It</button>
+        <div id="outputField" v-if="word"> {{result}}</div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
